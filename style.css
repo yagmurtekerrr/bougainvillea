@@ -1,0 +1,524 @@
+                                         body {
+                                             padding: 0;
+                                             margin: 0;
+                                             font-family: "DM Sans";
+                                         }
+                                         
+                                         .container {
+                                             max-width: 1170px;
+                                             margin: 0 auto;
+                                             padding: 0 20px;
+                                         }
+                                         
+                                         .navbar {
+                                             display: flex;
+                                             justify-content: space-between;
+                                             align-items: center;
+                                             height: 80px;
+                                         }
+                                         
+                                         .navbar .hamburger-menu-button {
+                                             display: none;
+                                         }
+                                         
+                                         .navbar ul li {
+                                             list-style: none;
+                                             display: inline-block;
+                                         }
+                                         
+                                         .navbar ul li a {
+                                             font-size: 16px;
+                                             font-weight: 500;
+                                             color: #000000;
+                                             text-transform: uppercase;
+                                             text-decoration: none;
+                                             padding: 0 32px;
+                                         }
+                                         
+                                         @media screen and (max-width:1000px) {
+                                             .navbar ul {
+                                                 display: none;
+                                             }
+                                             .navbar .action-button {
+                                                 display: none;
+                                             }
+                                             .navbar .hamburger-menu-button {
+                                                 display: block;
+                                                 background-color: transparent;
+                                             }
+                                             .navigation:hover .hamburger-menu-button {
+                                                 background-color: #7FFFD4;
+                                             }
+                                             .navigation:hover ul {
+                                                 display: block;
+                                                 position: absolute;
+                                                 top: 50px;
+                                                 right: 0;
+                                                 background-color: white;
+                                                 width: 100vw;
+                                             }
+                                             .navigation:hover ul li {
+                                                 display: block;
+                                                 line-height: 50px;
+                                             }
+                                         }
+                                         
+                                         button {
+                                             text-transform: uppercase;
+                                             font-size: 16px;
+                                             font-weight: 700;
+                                             color: #000000;
+                                             background-color: #7FFFD4;
+                                             border: none;
+                                             padding: 12px 29px;
+                                         }
+                                         
+                                         .showcase {
+                                             background-image: url(images/showcase.jpg);
+                                             background-size: cover;
+                                             background-repeat: no-repeat;
+                                             padding: 274px 0;
+                                         }
+                                         
+                                         .showcase h1 {
+                                             font-size: 60px;
+                                             font-weight: 700;
+                                             color: #ffffff;
+                                             margin: 0;
+                                             margin-bottom: 24px;
+                                             font-family: domine;
+                                             margin-top: 240px;
+                                         }
+                                         
+                                         .showcase h1 span {
+                                             color: #7FFFD4;
+                                         }
+                                         
+                                         .showcase p {
+                                             font-size: 22px;
+                                             font-weight: 400;
+                                             color: #ffffff;
+                                             margin: 0;
+                                             margin-bottom: 24px;
+                                         }
+                                         
+                                         .showcase__content {
+                                             max-width: 670px;
+                                         }
+                                         
+                                         @media screen and (max-width:700px) {
+                                             .showcase {
+                                                 padding: 100px 0;
+                                             }
+                                             .showcase h1 {
+                                                 font-size: 24px;
+                                                 margin-top: 50px;
+                                             }
+                                             .showcase p {
+                                                 font-size: 20px;
+                                             }
+                                         }
+                                         
+                                         @media screen and (max-width:500px) {
+                                             .showcase {
+                                                 padding: 50px 0 100px 0;
+                                             }
+                                             .showcase h1 {
+                                                 font-size: 24px;
+                                                 margin-top: 0px;
+                                             }
+                                             .showcase p {
+                                                 font-size: 12px;
+                                             }
+                                             .showcase .action-button {
+                                                 font-size: 12px;
+                                             }
+                                         }
+                                         
+                                         .rooms {
+                                             display: grid;
+                                             grid-template-columns: 1fr 1fr 1fr 1fr;
+                                             column-gap: 30px;
+                                             row-gap: 30px;
+                                             margin-top: 64px;
+                                         }
+                                         
+                                         @media screen and (max-width: 700px) {
+                                             .rooms {
+                                                 grid-template-columns: 1fr 1fr;
+                                             }
+                                         }
+                                         
+                                         .rooms img {
+                                             max-width: 100%;
+                                             width: 100%;
+                                         }
+                                         
+                                         .rooms__3 {
+                                             grid-column: 3 / span 2;
+                                         }
+                                         
+                                         @media screen and (max-width:700px) {
+                                             .rooms__3 {
+                                                 grid-column: 1 / span 2;
+                                             }
+                                         }
+                                         
+                                         .rooms__4 {
+                                             grid-column: 1 / span 2;
+                                         }
+                                         
+                                         .baslik {
+                                             text-transform: uppercase;
+                                             height: 46px;
+                                             text-align: center;
+                                             font-size: 42px;
+                                             color: #000000;
+                                             font-family: Domine;
+                                             margin-top: 64px;
+                                         }
+                                         
+                                         .dates-left {
+                                             display: flex;
+                                         }
+                                         
+                                         .dates-section .dates .head {
+                                             color: #999999;
+                                             font-size: 16px;
+                                             font-weight: 700;
+                                         }
+                                         
+                                         .dates-section .dates .bold {
+                                             color: #000000;
+                                             font-family: "domine";
+                                             font-size: 42px;
+                                             line-height: 1;
+                                             margin: 0;
+                                         }
+                                         
+                                         .dates-month p {
+                                             margin: 0;
+                                         }
+                                         
+                                         .dates-month {
+                                             margin-left: 5px;
+                                             text-align: center;
+                                         }
+                                         
+                                         .dates-month a {
+                                             display: block;
+                                         }
+                                         
+                                         .dates {
+                                             display: flex;
+                                             max-width: 970px;
+                                             background-color: #fff;
+                                             margin: 0 auto;
+                                             margin-top: -64px;
+                                             box-shadow: 0px 4px 40px rgba(25, 51, 42, 0.1);
+                                             min-height: 120px;
+                                         }
+                                         
+                                         .dates-left {
+                                             flex: 4;
+                                             justify-content: space-around;
+                                         }
+                                         
+                                         .dates-right {
+                                             flex: 1;
+                                         }
+                                         
+                                         .dates-right button {
+                                             background-color: #7FFFD4;
+                                             width: 100%;
+                                             height: 100%;
+                                         }
+                                         
+                                         .dates-cal {
+                                             display: flex;
+                                             line-height: 1;
+                                         }
+                                         
+                                         @media screen and (max-width:630px) {
+                                             .dates-left {
+                                                 flex-wrap: wrap;
+                                                 padding: 16px 36px 36px 36px;
+                                             }
+                                             .dates-left .dates-group {
+                                                 min-width: 170px;
+                                             }
+                                             .dates {
+                                                 display: block;
+                                             }
+                                             .dates-right button {
+                                                 width: auto;
+                                                 margin-bottom: 16px;
+                                                 padding: 24px;
+                                             }
+                                             .dates-right {
+                                                 text-align: center;
+                                             }
+                                             .dates-section .dates .bold {
+                                                 font-size: 36px;
+                                             }
+                                             .dates-section .dates .head {
+                                                 font-size: 14px;
+                                             }
+                                             .dates-right button {
+                                                 font-size: 14px;
+                                                 background-color: #65CCA9;
+                                                 color: #FFF;
+                                             }
+                                         }
+                                         
+                                         .properties .baslik_1 {
+                                             height: 46px;
+                                             font-size: 42px;
+                                             font-weight: 700;
+                                             font-family: domine;
+                                             text-align: center;
+                                             margin-bottom: 64px;
+                                         }
+                                         
+                                         .properties .baslik_1 span {
+                                             text-decoration: underline;
+                                             text-decoration-color: #7FFFD4;
+                                             text-underline-position: under;
+                                             text-decoration-thickness: 4px;
+                                         }
+                                         
+                                         .properties .content {
+                                             max-width: 1068px;
+                                             display: grid;
+                                             grid-template-columns: 1fr 1fr 1fr;
+                                             column-gap: 30px;
+                                             row-gap: 30px;
+                                             margin: auto;
+                                         }
+                                         
+                                         .properties .altbaslik-2 {
+                                             font-size: 18px;
+                                             font-weight: 700;
+                                         }
+                                         
+                                         .properties .altbaslik-3 {
+                                             font-size: 18px;
+                                             font-weight: 700;
+                                         }
+                                         
+                                         .properties .altbaslik-4 {
+                                             font-size: 18px;
+                                             font-weight: 700;
+                                         }
+                                         
+                                         .properties .altbaslik-5 {
+                                             font-size: 18px;
+                                             font-weight: 700;
+                                         }
+                                         
+                                         .properties .altbaslik-6 {
+                                             font-size: 18px;
+                                             font-weight: 700;
+                                         }
+                                         
+                                         .properties {
+                                             max-width: 1170px;
+                                             margin: 0 auto;
+                                             top: 2182px;
+                                         }
+                                         
+                                         @media screen and (max-width:700px) {
+                                             .properties .content {
+                                                 grid-template-columns: 1fr 1fr;
+                                             }
+                                             .properties .baslik_1 {
+                                                 font-size: 30px;
+                                             }
+                                         }
+                                         
+                                         @media screen and (max-width:500px) {
+                                             .properties .content {
+                                                 grid-template-columns: 1fr;
+                                             }
+                                             .property_texts h3 {
+                                                 font-family: "domine";
+                                             }
+                                         }
+                                         
+                                         .note {
+                                             padding: 30px 0;
+                                             background-color: #333333;
+                                             display: flex;
+                                             flex-direction: column;
+                                             justify-content: center;
+                                             align-items: center;
+                                         }
+                                         
+                                         .note .vector {
+                                             word-spacing: 18px;
+                                         }
+                                         
+                                         .note .note-1 {
+                                             font-family: domine;
+                                             max-width: 770px;
+                                             margin-bottom: 48px;
+                                             font-size: 24px;
+                                             font-weight: 700;
+                                             color: #ffffff;
+                                             line-height: 44px;
+                                         }
+                                         
+                                         .note .note-1 span {
+                                             color: #7FFFD4;
+                                         }
+                                         
+                                         .note .note-2 {
+                                             height: 18px;
+                                             font-family: DM Sans;
+                                             font-size: 20px;
+                                             line-height: 18px;
+                                             color: #ccc;
+                                         }
+                                         
+                                         @media screen and (max-width:700px) {
+                                             .note .note-1 {
+                                                 font-size: 20px;
+                                             }
+                                         }
+                                         
+                                         .special .baslikspcl h3 {
+                                             text-transform: uppercase;
+                                             height: 46px;
+                                             font-size: 42px;
+                                             font-weight: 700;
+                                             text-align: center;
+                                             font-family: "domine";
+                                             margin: 63px auto 63px auto;
+                                         }
+                                         
+                                         .spclgrid {
+                                             display: grid;
+                                             grid-template-columns: 1fr 1fr 1fr;
+                                             column-gap: 30px;
+                                             row-gap: 30px;
+                                             margin: auto;
+                                         }
+                                         
+                                         .spclgrid img {
+                                             max-width: 100%;
+                                         }
+                                         
+                                         @media screen and (max-width: 500px) {
+                                             .spclgrid {
+                                                 grid-template-columns: 1fr;
+                                             }
+                                             .special .baslikspcl h3 {
+                                                 font-size: 30px;
+                                             }
+                                         }
+                                         
+                                         @media screen and (max-width: 700px) {
+                                             .special .baslikspcl {
+                                                 font-size: 30px;
+                                             }
+                                         }
+                                         
+                                         .spclgrid p {
+                                             margin-left: 24px;
+                                             margin-right: 24px;
+                                         }
+                                         
+                                         .spclgrid .spcl-1 {
+                                             box-shadow: inset 0 0 0 1px rgba(229, 229, 229, 1);
+                                             padding-bottom: 20px;
+                                         }
+                                         
+                                         .spclgrid .spcl-2 {
+                                             box-shadow: inset 0 0 0 1px rgba(229, 229, 229, 1);
+                                             padding-bottom: 20px;
+                                         }
+                                         
+                                         .spclgrid .spcl-3 {
+                                             box-shadow: inset 0 0 0 1px rgba(229, 229, 229, 1);
+                                             padding-bottom: 20px;
+                                         }
+                                         
+                                         .spclgrid h1 {
+                                             font-family: "domine";
+                                             font-size: 24px;
+                                             margin-right: 24px;
+                                             margin-left: 24px;
+                                         }
+                                         
+                                         .spclgrid a {
+                                             text-transform: uppercase;
+                                             text-decoration: none;
+                                             color: #65CCA9;
+                                             width: 101px;
+                                             height: 24px;
+                                             font-weight: 700;
+                                             font-size: 16px;
+                                             margin-left: 24px;
+                                         }
+                                         
+                                         .footer {
+                                             min-height: 312px;
+                                             background-color: #F2FFFA;
+                                         }
+                                         
+                                         .footer .lists {
+                                             display: flex;
+                                             justify-content: space-between;
+                                             padding-top: 64px;
+                                         }
+                                         
+                                         .footer .lists .logoheight {
+                                             height: 26px;
+                                             width: 144px;
+                                             margin-bottom: 42px;
+                                             margin-top: 20px;
+                                         }
+                                         
+                                         @media screen and (max-width: 1000px) {
+                                             .footer .lists {
+                                                 font-size: 18px;
+                                                 display: grid;
+                                                 grid-template-columns: 1fr 1fr;
+                                                 grid-column: 1 / span 2;
+                                                 grid-column: 2 / span 3;
+                                             }
+                                         }
+                                         
+                                         @media screen and (max-width: 500px) {
+                                             .footer .lists {
+                                                 font-size: 11px;
+                                                 display: grid;
+                                                 grid-template-columns: 1fr;
+                                             }
+                                         }
+                                         
+                                         .rooms-section {
+                                             background-color: #F9F9F9;
+                                             padding: 1px;
+                                             padding-bottom: 64px;
+                                         }
+                                         
+                                         .dates-section {
+                                             position: relative;
+                                             z-index: 2;
+                                             padding: 1px;
+                                             background-color: #F9F9F9;
+                                         }
+                                         
+                                         .property {
+                                             display: flex;
+                                             align-items: flex-start;
+                                         }
+                                         
+                                         .property_texts {
+                                             margin-left: 18px;
+                                         }
+                                         
+                                         .property h3 {
+                                             margin-top: 0;
+                                         }
